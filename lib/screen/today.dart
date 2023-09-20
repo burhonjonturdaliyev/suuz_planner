@@ -1,16 +1,21 @@
+// ignore_for_file: must_be_immutable
+
 import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:page_transition/page_transition.dart';
-import 'package:suuz/data/btech.dart';
 import 'package:suuz/info/subject_info.dart';
 import 'package:suuz/model/subject_model.dart';
 import 'package:suuz/theme/colors.dart';
 
 class Today extends StatefulWidget {
-  const Today({Key? key}) : super(key: key);
+  Today({
+    Key? key,
+    required this.model,
+  }) : super(key: key);
+  List<SubjectModel> model;
 
   @override
   State<Today> createState() => _TodayState();
@@ -19,40 +24,7 @@ class Today extends StatefulWidget {
 class _TodayState extends State<Today> {
   Timer? timer;
   DateTime now = DateTime.now();
-  List<SubjectModel> model = [];
   String? day;
-  getList() async {
-    await getDay();
-    print(day?.toLowerCase());
-    if (day?.toLowerCase() == "monday") {
-      setState(() {
-        model = BTECH().monday;
-      });
-    } else if (day?.toLowerCase() == "tuesday") {
-      setState(() {
-        model = BTECH().tuesday;
-      });
-    } else if (day?.toLowerCase() == "wednesday") {
-      setState(() {
-        model = BTECH().wednesday;
-      });
-    } else if (day?.toLowerCase() == 'thursday') {
-      setState(() {
-        model = BTECH().thursday;
-      });
-    } else if (day?.toLowerCase() == 'friday') {
-      setState(() {
-        model = BTECH().friday;
-      });
-    }
-  }
-
-  getDay() {
-    setState(() {
-      day = DateFormat("EEEE").format(DateTime.now());
-    });
-  }
-
   void clock() {
     timer = Timer.periodic(Duration(seconds: 1), (timer) {
       setState(() {
@@ -63,10 +35,16 @@ class _TodayState extends State<Today> {
     });
   }
 
+  getDay() {
+    setState(() {
+      day = DateFormat("EEEE").format(DateTime.now());
+    });
+  }
+
   @override
   void initState() {
+    getDay();
     clock();
-    getList();
     super.initState();
   }
 
@@ -110,7 +88,7 @@ class _TodayState extends State<Today> {
                     Text(
                       day!.toUpperCase(),
                       style: GoogleFonts.inter(
-                        color: mainColor,
+                        color: white,
                         fontWeight: FontWeight.bold,
                         fontSize: 20,
                       ),
@@ -119,7 +97,7 @@ class _TodayState extends State<Today> {
                 ),
                 Divider(
                   thickness: 1,
-                  color: mainColor,
+                  color: white,
                 ),
               ],
             ),
@@ -127,10 +105,9 @@ class _TodayState extends State<Today> {
         ),
         SliverList(
           delegate: SliverChildBuilderDelegate(
-            childCount: model.length,
+            childCount: widget.model.length,
             (BuildContext context, int index) {
-              // Build and return the items for your list here
-              return design(model[index]);
+              return design(widget.model[index]);
             },
           ),
         ),

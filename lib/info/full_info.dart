@@ -20,6 +20,7 @@ class _FullInfoState extends State<FullInfo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Colors.black,
         appBar: AppBar(
           backgroundColor: mainColor,
           centerTitle: true,
@@ -29,18 +30,27 @@ class _FullInfoState extends State<FullInfo> {
             style: appBarStyle,
           ),
         ),
-        body: CustomScrollView(
-          slivers: <Widget>[
-            SliverList(
-              delegate: SliverChildBuilderDelegate(
-                childCount: widget.model.length,
-                (BuildContext context, int index) {
-                  // Build and return the items for your list here
-                  return design(widget.model[index]);
-                },
+        body: Container(
+          decoration: BoxDecoration(
+            color: Colors.black26,
+            image: DecorationImage(
+                image: AssetImage('image/sharda/campus.jpg'),
+                opacity: 0.25,
+                fit: BoxFit.cover),
+          ),
+          child: CustomScrollView(
+            slivers: <Widget>[
+              SliverList(
+                delegate: SliverChildBuilderDelegate(
+                  childCount: widget.model.length,
+                  (BuildContext context, int index) {
+                    // Build and return the items for your list here
+                    return design(widget.model[index]);
+                  },
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ));
   }
 

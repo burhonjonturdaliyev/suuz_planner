@@ -41,6 +41,8 @@ dependencies:
   shared_preferences: ^2.2.1
   google_fonts: ^6.0.0
   intl: ^0.18.1
+  provider: ^6.0.5
+  url_launcher: ^6.1.14
 
 dev_dependencies:
   flutter_test:
@@ -48,7 +50,7 @@ dev_dependencies:
 
 flutter_launcher_icons:
   android: 'launcher_icon'
-  image_path: 'Assets/Icon/sharda.png'
+  image_path: 'image/Icon/sharda.png'
   min_sdk_android: 21
 
   # The "flutter_lints" package below contains a set of recommended lints to
@@ -70,8 +72,9 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-assets:
-  - Assets/Icon/
+  assets:
+    - image/Icon/
+    - image/sharda/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

@@ -3,6 +3,11 @@ class StaffName {
   String Nodirbek = 'Mr Nodirbek';
   String Pooja = 'Dr Pooja';
   String NF = "New Faculty Member";
+  String Sharma = 'Dr Ritu Sharma';
+  String Anand = 'Dr Anand';
+  String Abhay = 'Mr Abhay';
+  String Zulayho = 'Ms Zulayho';
+  String Pramod = 'Dr Pramod';
 }
 
 class CourseName {
@@ -13,4 +18,12 @@ class CourseName {
   String CSC021 = 'Ethical Hacking';
   String CSC022 = 'Disaster Recovery Management';
   String CSA022 = 'Digital Image Processing';
+}
+
+class BAE2subject {
+  String BAE301 = 'Idroduction of Linguistics';
+  String BAE302 = 'Introduction of Phonetics';
+  String BAE303 = 'Advance Grammar';
+  String BAE304 = 'Semantics - The study of meaning of word and phrases';
+  String BAE305 = 'Understanding basic science - 1';
 }

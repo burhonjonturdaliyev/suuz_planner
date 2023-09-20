@@ -4,6 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:suuz/theme/colors.dart';
 import 'package:suuz/util/button.dart';
 
+import '../provider/db_provider.dart';
+
 class Setting extends StatefulWidget {
   const Setting({super.key});
 
@@ -12,6 +14,31 @@ class Setting extends StatefulWidget {
 }
 
 class _SettingState extends State<Setting> {
+  String name = '';
+  String surname = '';
+  String faculty = '';
+  String year = '';
+
+  getData() async {
+    final _name = await DatabaseProvider().getName();
+    final _surname = await DatabaseProvider().getSurname();
+    final _faculty = await DatabaseProvider().getFaculty();
+    final _year = await DatabaseProvider().getYear();
+
+    setState(() {
+      name = _name;
+      surname = _surname;
+      faculty = _faculty;
+      year = _year;
+    });
+  }
+
+  @override
+  void initState() {
+    getData();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -34,15 +61,15 @@ class _SettingState extends State<Setting> {
             height: 20,
           ),
           Text(
-            "Your Name",
+            name + ' ' + surname,
             textAlign: TextAlign.center,
             style: GoogleFonts.inter(
-                fontWeight: FontWeight.bold, color: mainColor, fontSize: 25),
+                fontWeight: FontWeight.bold, color: white, fontSize: 25),
           ),
           Text(
-            '(B.Tech)',
+            '($faculty)',
             style: GoogleFonts.inter(
-                fontSize: 20, fontWeight: FontWeight.w600, color: mainColor),
+                fontSize: 20, fontWeight: FontWeight.w600, color: white),
           ),
           SizedBox(
             height: 10,
@@ -60,7 +87,7 @@ class _SettingState extends State<Setting> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Name:" + " " + "Your Name",
+                    "Name:" + " " + name,
                     style: GoogleFonts.inter(
                         color: white,
                         fontSize: 20,
@@ -70,7 +97,7 @@ class _SettingState extends State<Setting> {
                     height: 10,
                   ),
                   Text(
-                    "Surname:" + " " + "Your Surname",
+                    "Surname:" + " " + surname,
                     style: GoogleFonts.inter(
                         color: white,
                         fontSize: 20,
@@ -80,7 +107,7 @@ class _SettingState extends State<Setting> {
                     height: 10,
                   ),
                   Text(
-                    "Faculty:" + " " + "B.Tech",
+                    "Faculty:" + " " + faculty,
                     style: GoogleFonts.inter(
                         color: white,
                         fontSize: 20,
@@ -90,7 +117,7 @@ class _SettingState extends State<Setting> {
                     height: 10,
                   ),
                   Text(
-                    "Year:" + " " + "Third year",
+                    "Year:" + " " + year,
                     style: GoogleFonts.inter(
                         color: white,
                         fontSize: 20,
@@ -103,7 +130,11 @@ class _SettingState extends State<Setting> {
           SizedBox(
             height: 60,
           ),
-          button(name: "Logout", onPressed: () {})
+          button(
+              name: "Logout",
+              onPressed: () {
+                DatabaseProvider().logout(context);
+              })
         ],
       ),
     );

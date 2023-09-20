@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:page_transition/page_transition.dart';
+import 'package:suuz/data/baa.dart';
 import 'package:suuz/data/btech.dart';
 import 'package:suuz/info/full_info.dart';
+import 'package:suuz/provider/db_provider.dart';
 
 import '../model/subject_model.dart';
 import '../theme/colors.dart';
@@ -15,16 +17,58 @@ class Week extends StatefulWidget {
 }
 
 class _WeekState extends State<Week> {
+  List<SubjectModel> monday = [];
+  List<SubjectModel> tuesday = [];
+  List<SubjectModel> wednesday = [];
+  List<SubjectModel> thursday = [];
+  List<SubjectModel> friday = [];
+  String batch = '';
+  String year = '';
+  getUser() async {
+    final _batch = await DatabaseProvider().getFaculty();
+    final _year = await DatabaseProvider().getYear();
+    setState(() {
+      batch = _batch;
+      year = _year;
+    });
+    if (batch == 'B.Tech' && year == 'Third year') {
+      setState(() {
+        monday = BTECH().monday;
+        tuesday = BTECH().tuesday;
+        wednesday = BTECH().wednesday;
+        thursday = BTECH().thursday;
+        friday = BTECH().friday;
+      });
+    } else if (batch == 'BAE' && year == 'Second year') {
+      setState(() {
+        monday = BAA2().monday;
+        tuesday = BAA2().tuesday;
+        wednesday = BAA2().wednesday;
+        thursday = BAA2().thursday;
+        friday = BAA2().friday;
+      });
+    }
+  }
+
+  @override
+  void initState() {
+    getUser();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
         children: [
-          container(name: "Monday", model: BTECH().monday),
-          container(name: "Tuesday", model: BTECH().tuesday),
-          container(name: "Wednesday", model: BTECH().wednesday),
-          container(name: "Thursday", model: BTECH().thursday),
-          container(name: "Friday", model: BTECH().friday),
+          SizedBox(
+            height: 10,
+          ),
+          container(name: "Monday", model: monday),
+          container(name: "Tuesday", model: tuesday),
+          container(name: "Wednesday", model: wednesday),
+          container(name: "Thursday", model: thursday),
+          container(name: "Friday", model: friday),
         ],
       ),
     );

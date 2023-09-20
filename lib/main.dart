@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:suuz/Navigation/home.dart';
+import 'package:suuz/Splash%20Screen/splash_screen.dart';
 import 'package:suuz/theme/colors.dart';
 
 void main() {
@@ -14,12 +14,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Suuz Plan',
+      title: 'Suuz Planner',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: mainColor),
         useMaterial3: true,
       ),
-      home: Home(),
+      home: SplashScreen(),
     );
   }
 }
