@@ -11,6 +11,7 @@ import 'package:suuz/screen/week.dart';
 import 'package:suuz/style/appBar.dart';
 import 'package:suuz/theme/colors.dart';
 
+import '../data/baa.dart';
 import '../data/btech.dart';
 import '../util/launch.dart';
 
@@ -255,23 +256,23 @@ class _HomeState extends State<Home> {
     print(day?.toLowerCase());
     if (day?.toLowerCase() == "monday") {
       setState(() {
-        model = baa2().monday;
+        model = BAE2().monday;
       });
     } else if (day?.toLowerCase() == "tuesday") {
       setState(() {
-        model = baa2().tuesday;
+        model = BAE2().tuesday;
       });
     } else if (day?.toLowerCase() == "wednesday") {
       setState(() {
-        model = baa2().wednesday;
+        model = BAE2().wednesday;
       });
     } else if (day?.toLowerCase() == 'thursday') {
       setState(() {
-        model = baa2().thursday;
+        model = BAE2().thursday;
       });
     } else if (day?.toLowerCase() == 'friday') {
       setState(() {
-        model = baa2().friday;
+        model = BAE2().friday;
       });
     }
   }

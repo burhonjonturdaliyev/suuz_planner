@@ -103,14 +103,37 @@ class _TodayState extends State<Today> {
             ),
           ),
         ),
-        SliverList(
-          delegate: SliverChildBuilderDelegate(
-            childCount: widget.model.length,
-            (BuildContext context, int index) {
-              return design(widget.model[index]);
-            },
-          ),
-        ),
+        widget.model.isNotEmpty
+            ? SliverList(
+                delegate: SliverChildBuilderDelegate(
+                  childCount: widget.model.length,
+                  (BuildContext context, int index) {
+                    return design(widget.model[index]);
+                  },
+                ),
+              )
+            : SliverToBoxAdapter(
+                child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    height: 200,
+                  ),
+                  Text(
+                    "No class".toUpperCase(),
+                    style: GoogleFonts.inter(
+                        color: white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18),
+                  ),
+                  Text(
+                    "(Contact with admin)".toUpperCase(),
+                    style: GoogleFonts.inter(
+                        color: grey, fontWeight: FontWeight.w500, fontSize: 15),
+                  ),
+                ],
+              )),
       ],
     );
   }

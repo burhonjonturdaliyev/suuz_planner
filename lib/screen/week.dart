@@ -41,11 +41,11 @@ class _WeekState extends State<Week> {
       });
     } else if (batch == 'BAE' && year == 'Second year') {
       setState(() {
-        monday = BAA2().monday;
-        tuesday = BAA2().tuesday;
-        wednesday = BAA2().wednesday;
-        thursday = BAA2().thursday;
-        friday = BAA2().friday;
+        monday = BAE2().monday;
+        tuesday = BAE2().tuesday;
+        wednesday = BAE2().wednesday;
+        thursday = BAE2().thursday;
+        friday = BAE2().friday;
       });
     }
   }
