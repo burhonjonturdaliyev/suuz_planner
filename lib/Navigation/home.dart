@@ -43,9 +43,9 @@ class _HomeState extends State<Home> {
       batch = _batch;
       year = _year;
     });
-    if (batch == 'B.Tech') {
+    if (batch == 'B.Tech' && year == 'Third year') {
       btech3();
-    } else if (batch == 'BAE') {
+    } else if (batch == 'BAE' && year == 'Second year') {
       baa2();
     }
   }

@@ -5,6 +5,8 @@ import 'package:page_transition/page_transition.dart';
 import 'package:suuz/Navigation/home.dart';
 import 'package:suuz/provider/db_provider.dart';
 import 'package:suuz/register/user_register.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
+import '../theme/colors.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -51,6 +53,18 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: white,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset('image/sharda/logo_sharda.png'),
+          AnimatedTextKit(animatedTexts: [
+            TyperAnimatedText("Future is here!"),
+            TyperAnimatedText("Let's begin"),
+          ])
+        ],
+      ),
+    );
   }
 }
