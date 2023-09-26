@@ -8,9 +8,21 @@ class StaffName {
   String Abhay = 'Mr Abhay';
   String Zulayho = 'Ms Zulayho';
   String Pramod = 'Dr Pramod';
+  String Ramkumar="Mr Ramkumar";
+  String Gabriel='Dr Gabriel';
 }
 
-class CourseName {
+class BTECH4subject{
+  String CSE411='';
+  String UCD422='';
+  String Google='';
+  String HMM421='';
+  String CS1053='';
+  String CSC041='';
+  String CSC042='';
+}
+
+class BTECH3subject {
   String CSE311 = 'Design and Analysis of Algorithm with Lab';
   String CSE312 = 'Software Engineering and Testing Methodologies with Lab';
   String CSE313 = 'Computer Networks with Lab';
@@ -26,4 +38,8 @@ class BAE2subject {
   String BAE303 = 'Advance Grammar';
   String BAE304 = 'Semantics - The study of meaning of word and phrases';
   String BAE305 = 'Understanding basic science - 1';
+}
+
+class BBA3subject{
+  
 }

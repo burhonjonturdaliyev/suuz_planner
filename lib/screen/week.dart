@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:page_transition/page_transition.dart';
-import 'package:suuz/data/baa.dart';
+import 'package:suuz/data/bae.dart';
 import 'package:suuz/data/btech.dart';
 import 'package:suuz/info/full_info.dart';
 import 'package:suuz/provider/db_provider.dart';

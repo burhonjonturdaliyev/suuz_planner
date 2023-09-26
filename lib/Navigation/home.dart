@@ -11,7 +11,7 @@ import 'package:suuz/screen/week.dart';
 import 'package:suuz/style/appBar.dart';
 import 'package:suuz/theme/colors.dart';
 
-import '../data/baa.dart';
+import '../data/bae.dart';
 import '../data/btech.dart';
 import '../util/launch.dart';
 
