@@ -43,10 +43,36 @@ class _HomeState extends State<Home> {
       batch = _batch;
       year = _year;
     });
-    if (batch == 'B.Tech' && year == 'Third year') {
-      btech3();
-    } else if (batch == 'BAE' && year == 'Second year') {
-      baa2();
+    if(batch=='B.Tech'){
+      if(year=='Third year'){
+        btech3();
+      }else if(year=='First year'){
+
+      }else if(year=='Second year'){
+
+      }else if(year=='Final year'){
+btech4();
+      }
+    }else if(batch=='BAE'){
+       if(year=='Third year'){
+
+       }else if(year=='First year'){
+
+       }else if(year=='Second year'){
+        baa2();
+       }else if(year=='Final year'){
+
+       }
+    }else if(batch=='BBA'){
+      if(year=='Third year'){
+
+      }else if(year=='First year'){
+
+      }else if(year=='Second year'){
+
+      }else if(year=='Final year'){
+
+      }
     }
   }
 
@@ -225,28 +251,53 @@ class _HomeState extends State<Home> {
     );
   }
 
+  btech4() async {
+    await getDay();
+    print(day?.toLowerCase());
+    if (day?.toLowerCase() == "monday") {
+      setState(() {
+        model = BTECH4().monday;
+      });
+    } else if (day?.toLowerCase() == "tuesday") {
+      setState(() {
+        model = BTECH4().tuesday;
+      });
+    } else if (day?.toLowerCase() == "wednesday") {
+      setState(() {
+        model = BTECH4().wednesday;
+      });
+    } else if (day?.toLowerCase() == 'thursday') {
+      setState(() {
+        model = BTECH4().thursday;
+      });
+    } else if (day?.toLowerCase() == 'friday') {
+      setState(() {
+        model = BTECH4().friday;
+      });
+    }
+  }
   btech3() async {
     await getDay();
     print(day?.toLowerCase());
     if (day?.toLowerCase() == "monday") {
       setState(() {
-        model = BTECH().monday;
+        model = BTECH3().monday;
       });
     } else if (day?.toLowerCase() == "tuesday") {
       setState(() {
-        model = BTECH().tuesday;
+        model = BTECH3().tuesday;
       });
     } else if (day?.toLowerCase() == "wednesday") {
       setState(() {
-        model = BTECH().wednesday;
+        model = BTECH3().wednesday;
       });
     } else if (day?.toLowerCase() == 'thursday') {
       setState(() {
-        model = BTECH().thursday;
+        model = BTECH3().thursday;
       });
     } else if (day?.toLowerCase() == 'friday') {
       setState(() {
-        model = BTECH().friday;
+        model = BTECH3().friday;
       });
     }
   }

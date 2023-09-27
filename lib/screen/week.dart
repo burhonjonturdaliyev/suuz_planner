@@ -33,11 +33,19 @@ class _WeekState extends State<Week> {
     });
     if (batch == 'B.Tech' && year == 'Third year') {
       setState(() {
-        monday = BTECH().monday;
-        tuesday = BTECH().tuesday;
-        wednesday = BTECH().wednesday;
-        thursday = BTECH().thursday;
-        friday = BTECH().friday;
+        monday = BTECH3().monday;
+        tuesday = BTECH3().tuesday;
+        wednesday = BTECH3().wednesday;
+        thursday = BTECH3().thursday;
+        friday = BTECH3().friday;
+      });
+    }else if(batch == 'B.Tech' && year == 'Final year'){
+       setState(() {
+        monday = BTECH4().monday;
+        tuesday = BTECH4().tuesday;
+        wednesday = BTECH4().wednesday;
+        thursday = BTECH4().thursday;
+        friday = BTECH4().friday;
       });
     } else if (batch == 'BAE' && year == 'Second year') {
       setState(() {

@@ -13,13 +13,13 @@ class StaffName {
 }
 
 class BTECH4subject{
-  String CSE411='';
-  String UCD422='';
-  String Google='';
-  String HMM421='';
-  String CS1053='';
-  String CSC041='';
-  String CSC042='';
+  String CSE411='Artificial Intelegence with Lab';
+  String UCD422='Capstone Design - 1';
+  String Google='Cloud computing';
+  String HMM421='Professional Ethics';
+  String CS1053='Introduction to Internet of Things';
+  String CSC041='Information Security & Audit Monitoring';
+  String CSC042='Introsion  Detection and Prevention System';
 }
 
 class BTECH3subject {
