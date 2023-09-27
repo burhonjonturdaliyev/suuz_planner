@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:suuz/const/paymets.dart';
+import 'package:suuz/data/bba.dart';
 import 'package:suuz/model/subject_model.dart';
 import 'package:suuz/provider/db_provider.dart';
 import 'package:suuz/screen/setting.dart';
@@ -51,7 +52,7 @@ class _HomeState extends State<Home> {
       }else if(year=='Second year'){
 
       }else if(year=='Final year'){
-btech4();
+      btech4();
       }
     }else if(batch=='BAE'){
        if(year=='Third year'){
@@ -65,7 +66,7 @@ btech4();
        }
     }else if(batch=='BBA'){
       if(year=='Third year'){
-
+      bba3();
       }else if(year=='First year'){
 
       }else if(year=='Second year'){
@@ -249,6 +250,31 @@ btech4();
         ),
       ),
     );
+  }
+   bba3() async {
+    await getDay();
+    print(day?.toLowerCase());
+    if (day?.toLowerCase() == "monday") {
+      setState(() {
+        model = BBA3().monday;
+      });
+    } else if (day?.toLowerCase() == "tuesday") {
+      setState(() {
+        model = BBA3().tuesday;
+      });
+    } else if (day?.toLowerCase() == "wednesday") {
+      setState(() {
+        model = BBA3().wednesday;
+      });
+    } else if (day?.toLowerCase() == 'thursday') {
+      setState(() {
+        model = BBA3().thursday;
+      });
+    } else if (day?.toLowerCase() == 'friday') {
+      setState(() {
+        model = BBA3().friday;
+      });
+    }
   }
 
   btech4() async {

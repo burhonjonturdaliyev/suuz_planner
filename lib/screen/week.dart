@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:suuz/data/bae.dart';
+import 'package:suuz/data/bba.dart';
 import 'package:suuz/data/btech.dart';
 import 'package:suuz/info/full_info.dart';
 import 'package:suuz/provider/db_provider.dart';
@@ -31,31 +32,68 @@ class _WeekState extends State<Week> {
       batch = _batch;
       year = _year;
     });
-    if (batch == 'B.Tech' && year == 'Third year') {
-      setState(() {
-        monday = BTECH3().monday;
-        tuesday = BTECH3().tuesday;
-        wednesday = BTECH3().wednesday;
-        thursday = BTECH3().thursday;
-        friday = BTECH3().friday;
-      });
-    }else if(batch == 'B.Tech' && year == 'Final year'){
-       setState(() {
-        monday = BTECH4().monday;
-        tuesday = BTECH4().tuesday;
-        wednesday = BTECH4().wednesday;
-        thursday = BTECH4().thursday;
-        friday = BTECH4().friday;
-      });
-    } else if (batch == 'BAE' && year == 'Second year') {
-      setState(() {
+    if(batch=='B.Tech'){
+      if(year=='First year'){}
+      else if (year=='Second year'){
+         setState(() {
         monday = BAE2().monday;
         tuesday = BAE2().tuesday;
         wednesday = BAE2().wednesday;
         thursday = BAE2().thursday;
         friday = BAE2().friday;
       });
+      }
+      else if (year=='Third year'){
+          setState(() {
+        monday = BTECH3().monday;
+        tuesday = BTECH3().tuesday;
+        wednesday = BTECH3().wednesday;
+        thursday = BTECH3().thursday;
+        friday = BTECH3().friday;
+      });
+      }
+      else if (year=='Final year'){
+          setState(() {
+        monday = BTECH4().monday;
+        tuesday = BTECH4().tuesday;
+        wednesday = BTECH4().wednesday;
+        thursday = BTECH4().thursday;
+        friday = BTECH4().friday;
+      });
+      }
+    }else if(batch=='BBA'){
+        if(year=='First year'){}
+      else if (year=='Second year'){
+     
+      }
+      else if (year=='Third year'){
+            setState(() {
+        monday = BBA3().monday;
+        tuesday = BBA3().tuesday;
+        wednesday = BBA3().wednesday;
+        thursday = BBA3().thursday;
+        friday = BBA3().friday;
+      });
+      }
+      else if (year=='Final year'){
+      }
+    }else if(batch=='BAE'){
+      if(year=='First year'){}
+      else if (year=='Second year'){
+         setState(() {
+        monday = BAE2().monday;
+        tuesday = BAE2().tuesday;
+        wednesday = BAE2().wednesday;
+        thursday = BAE2().thursday;
+        friday = BAE2().friday;
+      });
+      }
+      else if (year=='Third year'){
+      }
+      else if (year=='Final year'){
+      }
     }
+   
   }
 
   @override

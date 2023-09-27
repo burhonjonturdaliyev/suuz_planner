@@ -10,6 +10,9 @@ class StaffName {
   String Pramod = 'Dr Pramod';
   String Ramkumar="Mr Ramkumar";
   String Gabriel='Dr Gabriel';
+  String Ujjwal='Dr Ujjwal';
+  String Tiwari='Dr Tiwari';
+  String Sankar='Dr Sankar';
 }
 
 class BTECH4subject{
@@ -41,5 +44,9 @@ class BAE2subject {
 }
 
 class BBA3subject{
-  
-}
+  String EIB002='International Finance';
+  String OPM301='Business Research Method';
+  String FAB102='Finance For Business';
+  String QTM203='Quantitative Technuques for Management';
+  String GMG401='Using Business Documentations';
+  }
