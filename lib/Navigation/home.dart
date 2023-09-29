@@ -44,36 +44,26 @@ class _HomeState extends State<Home> {
       batch = _batch;
       year = _year;
     });
-    if(batch=='B.Tech'){
-      if(year=='Third year'){
+    if (batch == 'B.Tech') {
+      if (year == 'Third year') {
         btech3();
-      }else if(year=='First year'){
-
-      }else if(year=='Second year'){
-
-      }else if(year=='Final year'){
-      btech4();
+      } else if (year == 'First year') {
+      } else if (year == 'Second year') {
+      } else if (year == 'Final year') {
+        btech4();
       }
-    }else if(batch=='BAE'){
-       if(year=='Third year'){
-
-       }else if(year=='First year'){
-
-       }else if(year=='Second year'){
+    } else if (batch == 'BAE') {
+      if (year == 'Third year') {
+      } else if (year == 'First year') {
+      } else if (year == 'Second year') {
         baa2();
-       }else if(year=='Final year'){
-
-       }
-    }else if(batch=='BBA'){
-      if(year=='Third year'){
-      bba3();
-      }else if(year=='First year'){
-
-      }else if(year=='Second year'){
-
-      }else if(year=='Final year'){
-
-      }
+      } else if (year == 'Final year') {}
+    } else if (batch == 'BBA') {
+      if (year == 'Third year') {
+        bba3();
+      } else if (year == 'First year') {
+      } else if (year == 'Second year') {
+      } else if (year == 'Final year') {}
     }
   }
 
@@ -97,70 +87,72 @@ class _HomeState extends State<Home> {
         backgroundColor: transparent,
         drawer: Drawer(
           backgroundColor: white,
-          child: Column(
-            children: [
-              SizedBox(
-                  height: 250,
-                  child: Image.asset('image/sharda/logo_sharda.png')),
-              Divider(
-                thickness: 1,
-                color: mainColor,
-              ),
-              ListTile(
-                title: Text(
-                  "Click",
-                  style: GoogleFonts.inter(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                      color: mainColor),
-                ),
-                subtitle: Text(
-                  "Qo'llab quvvatlash uchun:",
-                  style: GoogleFonts.inter(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w500,
-                      color: Colors.grey),
-                ),
-                onTap: () async {
-                  await Clicker(click);
-                },
-                trailing: Icon(
-                  Icons.payment,
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                SizedBox(
+                    height: 250,
+                    child: Image.asset('image/sharda/logo_sharda.png')),
+                Divider(
+                  thickness: 1,
                   color: mainColor,
                 ),
-              ),
-              Divider(
-                thickness: 1,
-                color: mainColor,
-              ),
-              ListTile(
-                title: Text(
-                  "Admin",
-                  style: GoogleFonts.inter(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                      color: mainColor),
+                ListTile(
+                  title: Text(
+                    "Click",
+                    style: GoogleFonts.inter(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: mainColor),
+                  ),
+                  subtitle: Text(
+                    "Qo'llab quvvatlash uchun:",
+                    style: GoogleFonts.inter(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.grey),
+                  ),
+                  onTap: () async {
+                    await Clicker(click);
+                  },
+                  trailing: Icon(
+                    Icons.payment,
+                    color: mainColor,
+                  ),
                 ),
-                subtitle: Text(
-                  "Dasturchi bilan bog'lanish:",
-                  style: GoogleFonts.inter(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w500,
-                      color: Colors.grey),
-                ),
-                onTap: () async {
-                  await Clicker(admin);
-                },
-                trailing: Icon(
-                  Icons.telegram,
+                Divider(
+                  thickness: 1,
                   color: mainColor,
                 ),
-              ),
-              Divider(
-                thickness: 1,
-                color: mainColor,
-              ),
-            ],
+                ListTile(
+                  title: Text(
+                    "Admin",
+                    style: GoogleFonts.inter(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: mainColor),
+                  ),
+                  subtitle: Text(
+                    "Dasturchi bilan bog'lanish:",
+                    style: GoogleFonts.inter(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.grey),
+                  ),
+                  onTap: () async {
+                    await Clicker(admin);
+                  },
+                  trailing: Icon(
+                    Icons.telegram,
+                    color: mainColor,
+                  ),
+                ),
+                Divider(
+                  thickness: 1,
+                  color: mainColor,
+                ),
+              ],
+            ),
           ),
         ),
         appBar: AppBar(
@@ -251,7 +243,8 @@ class _HomeState extends State<Home> {
       ),
     );
   }
-   bba3() async {
+
+  bba3() async {
     await getDay();
     print(day?.toLowerCase());
     if (day?.toLowerCase() == "monday") {
@@ -302,6 +295,7 @@ class _HomeState extends State<Home> {
       });
     }
   }
+
   btech3() async {
     await getDay();
     print(day?.toLowerCase());

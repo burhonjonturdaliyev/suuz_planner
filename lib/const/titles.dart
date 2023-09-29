@@ -8,23 +8,25 @@ class StaffName {
   String Abhay = 'Mr Abhay';
   String Zulayho = 'Ms Zulayho';
   String Pramod = 'Dr Pramod';
-  String Ramkumar="Mr Ramkumar";
-  String Gabriel='Dr Gabriel';
-  String Ujjwal='Dr Ujjwal';
-  String Tiwari='Dr Tiwari';
-  String Sankar='Dr Sankar';
-  String Davron='Mr Davron';
-  String Amirziya='Mr Amir Zia';
+  String Ramkumar = "Mr Ramkumar";
+  String Gabriel = 'Dr Gabriel';
+  String Ujjwal = 'Dr Ujjwal';
+  String Tiwari = 'Dr Tiwari';
+  String Sankar = 'Dr Sankar';
+  String Davron = 'Mr Davron';
+  String Amirziya = 'Mr Amir Zia';
+  String Lisha = 'Ms Lisha';
+  String Prakruti = 'Ms Prakruti';
 }
 
-class BTECH4subject{
-  String CSE411='Artificial Intelegence with Lab';
-  String UCD422='Capstone Design - 1';
-  String Google='Cloud computing';
-  String HMM421='Professional Ethics';
-  String CS1053='Introduction to Internet of Things';
-  String CSC041='Information Security & Audit Monitoring';
-  String CSC042='Introsion  Detection and Prevention System';
+class BTECH4subject {
+  String CSE411 = 'Artificial Intelegence with Lab';
+  String UCD422 = 'Capstone Design - 1';
+  String Google = 'Cloud computing';
+  String HMM421 = 'Professional Ethics';
+  String CS1053 = 'Introduction to Internet of Things';
+  String CSC041 = 'Information Security & Audit Monitoring';
+  String CSC042 = 'Introsion  Detection and Prevention System';
 }
 
 class BTECH3subject {
@@ -45,10 +47,10 @@ class BAE2subject {
   String BAE305 = 'Understanding basic science - 1';
 }
 
-class BBA3subject{
-  String EIB002='International Finance';
-  String OPM301='Business Research Method';
-  String FAB102='Finance For Business';
-  String QTM203='Quantitative Technuques for Management';
-  String GMG401='Using Business Documentations';
-  }
+class BBA3subject {
+  String EIB002 = 'International Finance';
+  String OPM301 = 'Business Research Method';
+  String FAB102 = 'Finance For Business';
+  String QTM203 = 'Quantitative Technuques for Management';
+  String GMG401 = 'Using Business Documentations';
+}
