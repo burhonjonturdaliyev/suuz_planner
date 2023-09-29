@@ -25,7 +25,7 @@ class BBA3 {
         time: "12:00\n12:55",
         courseCode: 'EIB002',
         fullName: BBA3subject().EIB002,
-        teacher: StaffName().Ujjwal),
+        teacher: StaffName().Davron),
     SubjectModel(
         time: "13:00\n14:00",
         courseCode: 'Launch Time',
@@ -35,14 +35,14 @@ class BBA3 {
         time: "14:00\n14:55",
         courseCode: 'QTM203',
         fullName: BBA3subject().QTM203,
-        teacher: StaffName().Sankar),
+        teacher: StaffName().Amirziya),
   ];
   List<SubjectModel> tuesday=[
        SubjectModel(
         time: "09:00\n09:55",
         courseCode: 'QTM203',
         fullName: BBA3subject().QTM203,
-        teacher: StaffName().Sankar),
+        teacher: StaffName().Amirziya),
     SubjectModel(
         time: "10:00\n10:55",
         courseCode: 'Libruary',
@@ -63,14 +63,15 @@ class BBA3 {
         courseCode: 'Launch Time',
         fullName: "",
         teacher: ""),
+  
     SubjectModel(
         time: "14:00\n14:55",
-        courseCode: 'Webinar', //editing here
-        fullName: '',
-        teacher: ''),
-    SubjectModel(
+        courseCode: 'EIB002',
+        fullName: BBA3subject().EIB002,
+        teacher: StaffName().Davron),
+          SubjectModel(
         time: "15:00\n15:55",
-        courseCode: 'OPM301',
+        courseCode: 'OPM301', 
         fullName: BBA3subject().OPM301,
         teacher: StaffName().Tiwari),
   ];
@@ -84,7 +85,7 @@ class BBA3 {
         time: "10:00\n10:55",
         courseCode: 'EIB002',
         fullName: BBA3subject().EIB002,
-        teacher: StaffName().Ujjwal),
+        teacher: StaffName().Davron),
     SubjectModel(
         time: "11:00\n11:55",
         courseCode: 'OPM301',
@@ -92,9 +93,9 @@ class BBA3 {
         teacher: StaffName().Tiwari),
     SubjectModel(
         time: "12:00\n12:55",
-        courseCode: 'Club Activity', //eding here
-        fullName: '',
-        teacher: ''),
+        courseCode: 'QTM203', //eding here
+        fullName: BBA3subject().QTM203,
+        teacher: StaffName().Amirziya),
     SubjectModel(
         time: "13:00\n14:00",
         courseCode: 'Launch Time',
@@ -108,20 +109,25 @@ class BBA3 {
   ];
   List<SubjectModel> thursday=[
     SubjectModel(
+        time: "09:00\n09:55",
+        courseCode: 'OPM301', 
+        fullName: BBA3subject().OPM301,
+        teacher: StaffName().Tiwari),
+    SubjectModel(
         time: "10:00\n10:55",
-        courseCode: 'QTM203', //editing here
+        courseCode: 'QTM203', 
         fullName: BBA3subject().QTM203,
         teacher: StaffName().Sankar),
     SubjectModel(
         time: "11:00\n11:55",
-        courseCode: 'GMG401', //editing here
+        courseCode: 'GMG401', 
         fullName: BBA3subject().GMG401,
         teacher: StaffName().Sankar),
     SubjectModel(
         time: "12:00\n12:55",
-        courseCode: 'EIB002', //editing here
+        courseCode: 'EIB002', 
         fullName: BBA3subject().EIB002,
-        teacher: StaffName().Ujjwal),
+        teacher: StaffName().Davron),
     SubjectModel(
         time: "13:00\n14:00",
         courseCode: 'Launch Time',
@@ -136,19 +142,19 @@ class BBA3 {
   List<SubjectModel> friday=[
       SubjectModel(
         time: "09:00\n09:55",
-        courseCode: 'FAB102',
-        fullName: BBA3subject().FAB102, //editing here
+        courseCode: 'OPM301',
+        fullName: BBA3subject().OPM301, 
         teacher: StaffName().Ujjwal),
     SubjectModel(
         time: "11:00\n11:55",
-        courseCode: 'OPM301',
-        fullName: BBA3subject().OPM301, //editing here
-        teacher: StaffName().Tiwari),
+        courseCode: 'FAB102',
+        fullName: BBA3subject().FAB102, 
+        teacher: StaffName().Ujjwal),
     SubjectModel(
         time: "12:00\n12:55",
-        courseCode: 'EIB002',
-        fullName: BBA3subject().EIB002, //editing here
-        teacher: StaffName().Ujjwal),
+        courseCode: 'Libruary',
+        fullName: '', 
+        teacher: ''),
   ];
 }
 class BBA4 {}

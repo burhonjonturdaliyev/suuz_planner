@@ -13,6 +13,8 @@ class StaffName {
   String Ujjwal='Dr Ujjwal';
   String Tiwari='Dr Tiwari';
   String Sankar='Dr Sankar';
+  String Davron='Mr Davron';
+  String Amirziya='Mr Amir Zia';
 }
 
 class BTECH4subject{
