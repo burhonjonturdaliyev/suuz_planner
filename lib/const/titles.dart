@@ -17,6 +17,9 @@ class StaffName {
   String Amirziya = 'Mr Amir Zia';
   String Lisha = 'Ms Lisha';
   String Prakruti = 'Ms Prakruti';
+  String Nilufar = 'Ms Nilufar';
+  String Barno = 'Ms Barno';
+  String Otabek = 'Mr Otabek';
 }
 
 class BTECH4subject {
@@ -27,6 +30,17 @@ class BTECH4subject {
   String CS1053 = 'Introduction to Internet of Things';
   String CSC041 = 'Information Security & Audit Monitoring';
   String CSC042 = 'Introsion  Detection and Prevention System';
+}
+
+class BTECH2subject {
+  String CSE211 = 'Computer organization and Architecture';
+  String CSE212 = 'Data structures with Lab';
+  String MATH103 = 'Discrete structure';
+  String CSE113 = 'Programming Project Lab';
+  String UZH101 = 'Uzbekistan History - I';
+  String CSE101 = 'Introduction to Computer science & Engineering';
+  String CSA101 = 'Introduction to AI/ML';
+  String CSC101 = 'Introduction to Cyber security & Law';
 }
 
 class BTECH3subject {

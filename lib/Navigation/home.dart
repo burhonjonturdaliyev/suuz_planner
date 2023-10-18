@@ -49,6 +49,7 @@ class _HomeState extends State<Home> {
         btech3();
       } else if (year == 'First year') {
       } else if (year == 'Second year') {
+        btech2();
       } else if (year == 'Final year') {
         btech4();
       }
@@ -292,6 +293,32 @@ class _HomeState extends State<Home> {
     } else if (day?.toLowerCase() == 'friday') {
       setState(() {
         model = BTECH4().friday;
+      });
+    }
+  }
+
+  btech2() async {
+    await getDay();
+    print(day?.toLowerCase());
+    if (day?.toLowerCase() == "monday") {
+      setState(() {
+        model = BTECH2().monday;
+      });
+    } else if (day?.toLowerCase() == "tuesday") {
+      setState(() {
+        model = BTECH2().tuesday;
+      });
+    } else if (day?.toLowerCase() == "wednesday") {
+      setState(() {
+        model = BTECH2().wednesday;
+      });
+    } else if (day?.toLowerCase() == 'thursday') {
+      setState(() {
+        model = BTECH2().thursday;
+      });
+    } else if (day?.toLowerCase() == 'friday') {
+      setState(() {
+        model = BTECH2().friday;
       });
     }
   }

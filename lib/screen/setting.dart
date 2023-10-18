@@ -77,7 +77,7 @@ class _SettingState extends State<Setting> {
           Container(
             margin: EdgeInsets.all(15),
             padding: EdgeInsets.only(left: 20, right: 20, top: 15, bottom: 15),
-            height: MediaQuery.of(context).size.height * 0.21,
+            height: MediaQuery.of(context).size.height * 0.25,
             width: MediaQuery.of(context).size.width * 1,
             decoration: BoxDecoration(
                 color: mainColor, borderRadius: BorderRadius.circular(25)),
