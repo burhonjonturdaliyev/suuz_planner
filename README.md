@@ -1,6 +1,6 @@
 # suuz
 
-- [Lab: Play market](https://play.google.com/store/apps/details?id=com.burkhan.suuz)
+- [Play market](https://play.google.com/store/apps/details?id=com.burkhan.suuz)
 
 ## Getting Started
 
