@@ -5,6 +5,11 @@ import '../const/titles.dart';
 class BAE2 {
   List<SubjectModel> monday = [
     SubjectModel(
+        time: "09:00\n09:55",
+        courseCode: 'BAE303',
+        fullName: BAE2subject().BAE303,
+        teacher: StaffName().Abhay),
+    SubjectModel(
         time: "10:00\n10:55",
         courseCode: 'BAE301',
         fullName: BAE2subject().BAE301,
@@ -43,9 +48,9 @@ class BAE2 {
         teacher: StaffName().Sharma),
     SubjectModel(
         time: "11:00\n11:55",
-        courseCode: 'BAE303',
-        fullName: BAE2subject().BAE303,
-        teacher: StaffName().Abhay),
+        courseCode: 'BAE302',
+        fullName: BAE2subject().BAE302,
+        teacher: StaffName().Anand),
     SubjectModel(
         time: "12:00\n12:55",
         courseCode: 'BAE304',
@@ -56,23 +61,18 @@ class BAE2 {
         courseCode: 'Launch Time',
         fullName: '',
         teacher: ""),
+  ];
+  List<SubjectModel> wednesday = [
     SubjectModel(
-        time: "14:00\n14:55",
+        time: "09:00\n09:55",
         courseCode: 'BAE302',
         fullName: BAE2subject().BAE302,
         teacher: StaffName().Anand),
-  ];
-  List<SubjectModel> wednesday = [
     SubjectModel(
         time: "10:00\n10:55",
         courseCode: 'BAE303',
         fullName: BAE2subject().BAE303,
         teacher: StaffName().Abhay),
-    SubjectModel(
-        time: "11:00\n11:55",
-        courseCode: 'BAE301',
-        fullName: BAE2subject().BAE301,
-        teacher: StaffName().Sharma),
     SubjectModel(
         time: "12:00\n12:55",
         courseCode: 'BAE304',
@@ -97,14 +97,14 @@ class BAE2 {
         teacher: StaffName().Pramod),
     SubjectModel(
         time: "10:00\n10:55",
-        courseCode: 'BAE303',
-        fullName: BAE2subject().BAE303,
-        teacher: StaffName().Abhay),
-    SubjectModel(
-        time: "11:00\n11:55",
         courseCode: 'BAE301',
         fullName: BAE2subject().BAE301,
         teacher: StaffName().Sharma),
+    SubjectModel(
+        time: "11:00\n11:55",
+        courseCode: 'BAE302',
+        fullName: BAE2subject().BAE302,
+        teacher: StaffName().Anand),
     SubjectModel(
         time: "12:00\n12:55",
         courseCode: 'BAE304',
@@ -117,21 +117,26 @@ class BAE2 {
         teacher: ""),
     SubjectModel(
         time: "14:00\n14:55",
-        courseCode: 'BAE302',
-        fullName: BAE2subject().BAE302,
-        teacher: StaffName().Anand),
+        courseCode: 'BAE303',
+        fullName: BAE2subject().BAE303,
+        teacher: StaffName().Abhay),
   ];
   List<SubjectModel> friday = [
+    SubjectModel(
+        time: "09:00\n09:55",
+        courseCode: 'BAE301',
+        fullName: BAE2subject().BAE301,
+        teacher: StaffName().Sharma),
     SubjectModel(
         time: "10:00\n10:55",
         courseCode: 'BAE303',
         fullName: BAE2subject().BAE303,
         teacher: StaffName().Abhay),
     SubjectModel(
-        time: "11:00\n11:55",
-        courseCode: 'BAE302',
-        fullName: BAE2subject().BAE302,
-        teacher: StaffName().Anand),
+        time: "12:00\n12:55",
+        courseCode: 'BAE305',
+        fullName: BAE2subject().BAE305,
+        teacher: StaffName().Pramod),
     SubjectModel(
         time: "13:00\n14:00",
         courseCode: 'Launch Time',
@@ -139,8 +144,8 @@ class BAE2 {
         teacher: ""),
     SubjectModel(
         time: "14:00\n14:55",
-        courseCode: 'BAE305',
-        fullName: BAE2subject().BAE305,
-        teacher: StaffName().Pramod),
+        courseCode: 'Libruary',
+        fullName: '',
+        teacher: ""),
   ];
 }

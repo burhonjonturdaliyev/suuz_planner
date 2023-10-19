@@ -58,7 +58,7 @@ class BAE2subject {
   String BAE302 = 'Introduction of Phonetics';
   String BAE303 = 'Advance Grammar';
   String BAE304 = 'Semantics - The study of meaning of word and phrases';
-  String BAE305 = 'Understanding basic science - 1';
+  String BAE305 = 'Understanding basic science - I';
 }
 
 class BBA3subject {
