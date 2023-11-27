@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:suuz/admin/screens/add_subject.dart';
 import 'package:suuz/admin/screens/home_admin.dart';
-import 'package:suuz/admin/screens/monitoring.dart';
+import 'package:suuz/admin/screens/monitoring/monitoring.dart';
 import 'package:suuz/theme/colors.dart';
 
 class Admin extends StatefulWidget {

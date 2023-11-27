@@ -25,7 +25,7 @@ class _AddSubjectState extends State<AddSubject> {
                   width: MediaQuery.of(context).size.width * .6,
                   height: MediaQuery.of(context).size.width * .2,
                   decoration: BoxDecoration(
-                      color: mainColor,
+                      color: Colors.orange,
                       borderRadius: BorderRadius.circular(28.5)),
                   child: Center(
                     child: Text(
@@ -45,7 +45,7 @@ class _AddSubjectState extends State<AddSubject> {
                   width: MediaQuery.of(context).size.width * .2,
                   height: MediaQuery.of(context).size.width * .2,
                   decoration: BoxDecoration(
-                      color: mainColor,
+                      color: Colors.orange,
                       borderRadius: BorderRadius.circular(100)),
                   child: Image.asset(
                     'image/Icon/timetable.png',
@@ -63,7 +63,7 @@ class _AddSubjectState extends State<AddSubject> {
                   width: MediaQuery.of(context).size.width * .6,
                   height: MediaQuery.of(context).size.width * .2,
                   decoration: BoxDecoration(
-                      color: mainColor,
+                      color: Colors.orange,
                       borderRadius: BorderRadius.circular(28.5)),
                   child: Center(
                     child: Text(
@@ -83,10 +83,10 @@ class _AddSubjectState extends State<AddSubject> {
                   width: MediaQuery.of(context).size.width * .2,
                   height: MediaQuery.of(context).size.width * .2,
                   decoration: BoxDecoration(
-                      color: mainColor,
+                      color: Colors.orange,
                       borderRadius: BorderRadius.circular(100)),
                   child: Image.asset(
-                    'image/Icon/timetable.png',
+                    'image/Icon/teacher.png',
                   ),
                 ),
               ],
@@ -101,7 +101,7 @@ class _AddSubjectState extends State<AddSubject> {
                   width: MediaQuery.of(context).size.width * .6,
                   height: MediaQuery.of(context).size.width * .2,
                   decoration: BoxDecoration(
-                      color: mainColor,
+                      color: Colors.orange,
                       borderRadius: BorderRadius.circular(28.5)),
                   child: Center(
                     child: Text(
@@ -121,10 +121,10 @@ class _AddSubjectState extends State<AddSubject> {
                   width: MediaQuery.of(context).size.width * .2,
                   height: MediaQuery.of(context).size.width * .2,
                   decoration: BoxDecoration(
-                      color: mainColor,
+                      color: Colors.orange,
                       borderRadius: BorderRadius.circular(100)),
                   child: Image.asset(
-                    'image/Icon/timetable.png',
+                    'image/Icon/events.png',
                   ),
                 ),
               ],
