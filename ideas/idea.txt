@@ -1,0 +1,37 @@
+Qilinishi kerak bo'lgan ishlar backend
+1. Admin
+    1. getAll Admin
+    2. create Admin
+    3. delete Admin
+2. Teacher
+    1. getAll Teacher
+    2. create Teacher
+    3. which year he/she take class and with subject
+    4. Delete Teacher
+3. Student
+    1. Create qilish
+    2. Update qilish
+    3. shu studentni kunlik requestlari
+    4. delete qilish
+4. Chat
+    1. Chat send
+    2. Chat get
+    3. admin bilan yozishgan barcha studentlar royxati
+    4. Id buyicha chat olib kelib berish 
+    5. Chat pagenation bulishi kere
+5. Monitoring
+    1. Barcha registr qigan userlar soni
+    2. Delete qigan userlar soni
+    3. Delete qigan userlar listi
+    4. Kunlik requestlar barcha userlar buyicha
+6. Add
+    1. Dars jadval create qilish
+    2. Dars jadval update qilish
+    3. Dars jadval get qilish
+        1. DateTime buyicha sort qib junatish user uchun
+        2. Automatic soat va kun buyicha dars jadval yuborish
+        3. Kunlik dars jadval token buyicha aniqligan
+7. Eventlar
+    1. Create qilish
+    2. update qilish
+    3. Delete qilish
