@@ -35,9 +35,7 @@ class _AdminState extends State<Admin> {
             children: [
               GestureDetector(
                 onTap: () {
-                  controller.animateToPage(0,
-                      duration: Duration(milliseconds: 250),
-                      curve: Curves.bounceInOut);
+                  controller.jumpToPage(0);
                 },
                 child: Image.asset(
                   'image/Icon/home.png',
@@ -47,9 +45,7 @@ class _AdminState extends State<Admin> {
               ),
               GestureDetector(
                 onTap: () {
-                  controller.animateToPage(1,
-                      duration: Duration(milliseconds: 250),
-                      curve: Curves.bounceInOut);
+                  controller.jumpToPage(1);
                 },
                 child: Image.asset(
                   'image/Icon/add.png',
@@ -59,9 +55,7 @@ class _AdminState extends State<Admin> {
               ),
               GestureDetector(
                 onTap: () {
-                  controller.animateToPage(2,
-                      duration: Duration(milliseconds: 250),
-                      curve: Curves.bounceInOut);
+                  controller.jumpToPage(2);
                 },
                 child: Image.asset(
                   'image/Icon/monitor.png',

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:suuz/Splash%20Screen/splash_screen.dart';
 import 'package:suuz/theme/colors.dart';
 
 import 'admin/navigation/admin.dart';
